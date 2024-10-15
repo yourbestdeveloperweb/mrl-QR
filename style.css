@@ -133,5 +133,50 @@ margin: -2%;
 
 }
 
+body {
+    background-color: rgb(242, 245, 248);
+    margin: 0; /* Asegúrate de que no haya margen en el body */
+    padding: 0; /* Asegúrate de que no haya padding en el body */
+}
+
+.formulario {
+    max-width: 90%; /* Cambia de 100% a 90% para un mejor ajuste en pantallas pequeñas */
+    margin: 1px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #FDFDFD;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.codigoQr {
+    padding: 20px;
+    margin: 30px auto; /* Cambia el margin a auto para centrar */
+    position: relative;
+    max-width: 100%; /* Asegúrate de que el código QR no supere el ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+.codigoQr img {
+    width: 100%; /* Asegúrate de que las imágenes sean responsivas */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.formulario input[type="text"], .formulario input[type="url"], .formulario input[type="color"], .formulario select {
+    box-sizing: border-box;
+    width: 100%; /* Mantiene el ancho completo */
+    margin: 10px 0; /* Espacio entre los inputs */
+    padding: 10px; /* Espacio interno */
+    font-size: 18px; /* Tamaño de fuente ajustable */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.formulario button, .download-button {
+    width: 100%; /* Botones de ancho completo */
+    padding: 10px; /* Espacio interno */
+    font-size: 18px; /* Tamaño de fuente ajustable */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
 
 
