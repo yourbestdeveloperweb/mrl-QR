@@ -1,106 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
-
-body{
+body {
     background-color: rgb(242, 245, 248);
+    margin: 0;
+    padding: 0;
 }
 
-.formulario{
+.formulario {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 100%;
+    max-width: 90%; 
     margin: 1px auto;
     text-align: center;
     padding: 20px;
     background-color: #FDFDFD;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.formulario img{
+.formulario img {
     max-width: 100px;
     filter: drop-shadow(0 0 0.2rem black);
     margin: 40px 0 0;
 }
 
-.formulario h1{
+.formulario h1 {
     background: #0cbeca;
     color: #11110f;
     padding: 20px 0;
-    font-weight: 400px;
     text-align: center;
     margin: -20px -20px -20px -20px;
     border-radius: 20px 20px 0 0;
     font-size: 35px;
 }
 
-.formulario input[type="text"], .formulario input[type="url"] {
+.formulario input[type="text"], .formulario input[type="url"], .formulario input[type="color"], .formulario select {
     box-sizing: border-box;
-    width: 100%;
-    margin: 50px 0;
-    background: #f581eb;
-    border: 4px solid #0a0a0a;
-    padding: 5%;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 40%;
+    width: 100%; 
+    margin: 10px 0; 
+    padding: 10px; 
+    font-size: 18px; 
+    border-radius: 10px; 
 }
 
-
-.formulario button{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    width: 200px;
-    margin: 0 auto;
-    padding: 2%;
-    background-color:#0cbeca;
-    color: #0e0d0d;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.95);
-    transition: .3s all ease;
+.formulario button, .download-button {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 18px; 
+    border-radius: 10px; 
 }
 
-.formulario button:hover{
-    background-color: #F8EE1E;
-    color: rgb(1, 128, 1);
-}
-
-.codigoQr{
+.codigoQr {
     padding: 20px;
-    margin: 30px 0;
-    position: relative; /* Añadido para centrar la imagen */
+    margin: 30px auto; 
+    position: relative;
+    max-width: 100%; 
+    height: auto; 
 }
 
-.codigoQr img{
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(1, 128, 1, 0.75);
-    max-width: 800px;
+.codigoQr img {
+    width: 100%; 
+    height: auto; 
 }
 
-.formulario p{
+.formulario p {
     font-size: 11px;
 }
 
 .download-button {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    width: 150px;
-    margin: 3%;
-    padding: 2%;
-    background-color:#0cbeca;
+    background-color: #0cbeca;
     color: #0e0d0d;
     border: none;
-    border-radius: 14px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 800;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.95);
-    transition: .3s all ease;
-    
 }
 
 .download-button:hover {
@@ -111,7 +81,6 @@ body{
     text-align: right;
 }
 
-/* Nueva regla para centrar la imagen */
 .codigoQr img.center-image {
     position: absolute;
     width: 50px;
@@ -128,6 +97,6 @@ body{
 }
 
 .qrslector {
-text-align: right;
-margin: -2%;
+    text-align: right;
+    margin: -2%;
 }
