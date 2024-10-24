@@ -1,71 +1,23 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
-body{
-    background-color: rgb(242, 245, 248);
-}
 
-.formulario{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    max-width: 100%;
-    margin: 1px auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #FDFDFD;
-    border-radius: 20px;
-}
-
-.formulario img{
-    max-width: 100px;
-    filter: drop-shadow(0 0 0.2rem black);
-    margin: 40px 0 0;
-}
-
-.formulario h1{
-    background: #0cbeca;
-    color: #11110f;
-    padding: 20px 0;
-    font-weight: 400px;
-    text-align: center;
-    margin: -20px -20px -20px -20px;
-    border-radius: 20px 20px 0 0;
-    font-size: 35px;
-}
-
-.formulario input[type="text"], .formulario input[type="url"] {
+/* Reset de estilos básicos */
+* {
     box-sizing: border-box;
-    width: 100%;
-    margin: 50px 0;
-    background: #f070e5;
-    border: 4px solid #0a0a0a;
-    padding: 5%;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 40%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-
-.formulario button{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    width: 200px;
-    margin: 0 auto;
-    padding: 2%;
-    background-color:#0cbeca;
-    color: #0e0d0d;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.95);
-    transition: .3s all ease;
-}
-
-.formulario button:hover{
-    background-color: #F8EE1E;
-    color: rgb(1, 128, 1);
+.codigoQr img.center-image {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .codigoQr{
@@ -80,60 +32,146 @@ body{
     max-width: 800px;
 }
 
-.formulario p{
-    font-size: 11px;
+
+
+body {
+    background-color: #d5e1ec;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-.download-button {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    width: 150px;
-    margin: 3%;
-    padding: 2%;
-    background-color:#0cbeca;
-    color: #0e0d0d;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 800;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.95);
-    transition: .3s all ease;
-    
+/* Estilo del contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d2c7f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.download-button:hover {
-    background-color: #218838;
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    background-color: #307e35;
+    color: rgb(7, 7, 7);
+    border-radius: 10px 10px 0 0;
+   
 }
 
-.myname {
-    text-align: right;
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ece8e8;
 }
 
-/* Nueva regla para centrar la imagen */
-.codigoQr img.center-image {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="url"],
+input[type="color"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #faeeee;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="file"]:focus {
+    border-color: #4CAF50;
 }
 
 .btcolor {
-    width: 25%;
-    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
 }
 
-.qrslector {
-text-align: right;
-margin: -2%;
+.btcolor label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
 
 }
 
+/* Botón estilizado */
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:  #307e35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
 
+button:hover {
+    background-color: #10f31b;
+}
 
+.download-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #745ef3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
 
+.download-button:hover {
+    background-color: #5436c4;
+}
 
+.myname {
+    margin-top: 20px;
+    font-size: 0.6rem;
+    color: #0a0a0a;
+}
+
+footer {
+    margin-top: 50px;
+    color: #0c0c0c;
+    font-size: 0.5rem;
+}
+
+/* Estilos responsive para móviles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    button,
+    .download-button {
+        font-size: 16px;
+    }
+
+    input[type="url"],
+    input[type="color"],
+    input[type="file"] {
+        font-size: 14px;
+    }
+}
