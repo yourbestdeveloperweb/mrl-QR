@@ -12,8 +12,8 @@
 
 .codigoQr img.center-image {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -28,14 +28,14 @@
 
 .codigoQr img{
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(1, 128, 1, 0.75);
+    box-shadow: none;
     max-width: 800px;
 }
 
 
 
 body {
-    background-color: #d5e1ec;
+    background-color: #d2c7f3;
     color: #333;
     padding: 20px;
     line-height: 1.6;
@@ -49,8 +49,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: #d2c7f3;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
