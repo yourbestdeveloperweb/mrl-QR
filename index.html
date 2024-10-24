@@ -6,47 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MRL Generador QR</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
 <body>
-    
     <script src="QRCodeLibrary.js"></script>
-    <div class="formulario">
+
+    <div class="header">
         <h1>MRL Generador QR</h1>
+    </div>
+
+    <div class="container">
         <form>
+            <!-- Input para ingresar la URL -->
             <input type="url" name="sitioWeb" id="sitioWeb" placeholder="Please enter a valid URL" required>
-            
+
             <!-- Input para seleccionar el color del QR -->
-             <div class="btcolor"> Select Color
-            <input type="color" id="colorQR" name="colorQR" value="#000000" required>
+            <div class="btcolor">
+                <label for="colorQR">Select Color</label>
+                <input type="color" id="colorQR" name="colorQR" value="#000000" required>
             </div>
 
-            <div class="qrslector">
             <!-- Input para subir la imagen que irá en el centro del QR -->
-            <input type="file" id="imagenQR" name="imagenQR" accept="image/*">
+            <div class="qrslector">
+                <input type="file" id="imagenQR" name="imagenQR" accept="image/*">
             </div>
-            <br>
-            <br>
-            <br>
 
-            <!-- Nuevo: Vista previa del QR generado con imagen -->
+            <!-- Vista previa del QR generado con imagen -->
             <div id="contenedorCodigoQr">
                 <div id="codigoQr" class="codigoQr"></div>
             </div>
 
+            <!-- Botón para generar el QR -->
             <button type="button" onclick="generarCodigoQr()">Generar QR</button>
-            <a class="download-button" href="#">Descaragar QR</a>
-            <br>
-            <br>
-            <br>
-            <br>
 
+            <!-- Enlace para descargar el QR generado -->
+            <a class="download-button" href="#">Descargar QR</a>
+
+            <!-- Información del desarrollador -->
             <div class="myname">
                 <p><strong>By Moises Ramirez: email: mrl08developer@gmail.com</strong></p>
             </div>
         </form>
     </div>
+
+    <div class="footer"></div>
+
     <script src="generator.js"></script>
 </body>
 
